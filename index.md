@@ -38,7 +38,7 @@ During this course you will learn:
 3. open the "☁ Autonomous Cloud Concepts with Keptn" Dashboard.
 4. Select link "🌐 KeptnInABox"
 
-<img src="https://github.com/jyarb-hotday2022/performanceEngineering-as-a-Self-Service/blob/gh-pages/assets/images/autonomous-cloud.png" width="500"/>
+<img src="assets/images/autonomous-cloud.png" width="500"/>
 
 <details><summary>If the link doesn't work...</summary>
 
