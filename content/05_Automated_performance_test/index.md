@@ -323,8 +323,6 @@ We are going to run the "Pipeline 01.2-Sockshop Delivery"
 
 The **0.12.2** build will deploy an image that will create high response times.
 
-<imagehere>
-
 Next, let's check the deployment in the Keptn Bridge.
 
 We should see the deployment to **dev**, however, with the longer than normal response times.
@@ -366,9 +364,8 @@ The Dynatrace AI (@Davis) also understand the deployment and illustatrates the e
 
 Now Let's trigger the build for cart version **0.12.3** as we have previously done for the **0.12.2** build.
 
-<hr>
 
-### Summary
+## Summary
 
 - Understaning of deployment automation with Keptn
 - illustrated how one would use quality gates as part of agile development to catch bad code.
