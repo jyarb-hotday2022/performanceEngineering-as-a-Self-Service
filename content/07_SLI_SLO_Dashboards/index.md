@@ -181,3 +181,5 @@ This will show all the SLI's from the dashbaord and the overall SLO scores.
 ### Summary
 
 - How one can setup a dashbaord for SLI/SLO evaluations
+
+<button class="button-save large">[Back](../06_Cloud_Automation/index.md)</button> | <button class="button-save large">[Continue](../08_Release_Monitoring/index.md)</button>

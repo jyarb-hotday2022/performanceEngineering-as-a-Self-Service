@@ -137,4 +137,4 @@ Focusing on “Average Failure Rate split by Test Names” and comparison with t
 - We showed another example how to analyze a Performance Test
 - We learned how to compare results from two different Performance tests
 
-## Questions and Answers?
+<button class="button-save large">[Back](../08_Release_Monitoring/index.md)</button> | <button class="button-save large">[Finish](../.../index.md)</button>

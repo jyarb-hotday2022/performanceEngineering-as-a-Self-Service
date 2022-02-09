@@ -137,4 +137,4 @@ Dynatrace currently supports integration with
 
 Execute the **"07-release-for-version"** pipeline again to see how the release versions are again updated.
 
-
+<button class="button-save large">[Back](../07_SLI_SLO_Dashboards/index.md)</button> | <button class="button-save large">[Continue](../09_Analysis/index.md)</button>

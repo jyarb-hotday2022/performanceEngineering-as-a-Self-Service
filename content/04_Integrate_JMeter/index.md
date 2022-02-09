@@ -99,3 +99,4 @@ Further Reading:
 ## Summary
 We learned how to integrate load testing with Dynatrace.
 
+<button class="button-save large">[Back](../03_SLOs_Load_Test_Analysis_Error_Issue/index.md)</button> | <button class="button-save large">[Continue](../05_Automated_performance_test/index.md)</button>
