@@ -309,4 +309,5 @@ Validate each project stage has been properly deployed by navigating to the KIAB
 
 <img src="../../assets/images/applinks.png" width="400"/>
 
+<button class="button-save large">[Back](../index.md)</button>
 <button class="button-save large">[Continue](../02_Load_Test_Analysis_Performance_Issue/index.md)</button>
