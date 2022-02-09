@@ -1,6 +1,6 @@
 ## Introduction
 
-## Welcome to Dynatrace HotDay
+## Welcome to Dynatrace Performance as a Self Service Lab
 
 Today we will cover how performance engineers can leverage Dynatrace thoughtout the CI/CD lifecycle.
 
