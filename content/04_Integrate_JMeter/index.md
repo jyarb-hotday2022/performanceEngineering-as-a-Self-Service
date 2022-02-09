@@ -1,5 +1,5 @@
 ## Integrate Load Test tools with Dynatrace
-<img src="../../assets/images/jmeter.png" width="100"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/jmeter.png" width="100"/>
 
 Previously we discussed the Load Test Request Attributes. Now we will expand on these concepts.
 
@@ -28,7 +28,7 @@ Dynatrace can analyze incoming HTTP headers and extract such contextual informat
 values and tag the captured requests with request attributes. 
 Request attributes enable you to filter your monitoring data based on defined tags.
 
-<img src="../../assets/images/lab_4_load_test_headers.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_4_load_test_headers.png" width="500"/>
 
 <hr>
 
@@ -43,17 +43,17 @@ See Dynatrace and load testing tools integration for more details on the recomme
 
 Good News, we have already added this into the jmeter scripts.
 
-<img src="../../assets/images/lab_04_jmeter.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_04_jmeter.png" width="500"/>
 
 Push custom events 
 When running a load test, you can push additional context information to Dynatrace using the custom event API. A custom annotation then appears in 
 the Events section on all overview pages of the entities that are defined in the API call (see example below).
 
-<img src="../../assets/images/lab_4_events.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_4_events.png" width="500"/>
 
 Load test events are also displayed on associated services pages (see example below).
 
-<img src="../../assets/images/lab_4_event_tag.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_4_event_tag.png" width="500"/>
 
 Further good news, these events are pushed via the keptn bridge.
 
@@ -64,7 +64,7 @@ See https://jmeter.apache.org/usermanual/component_reference.html#Backend_Listen
 
 We have also configured this in the Jmeter script.
 
-<img src="../../assets/images/lab_4_jmeter_listener.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_4_jmeter_listener.png" width="500"/>
 
 
 ## Run Load Test
@@ -77,7 +77,7 @@ Now we can select **"Build with Parameters"**
 
 Verify the Deployment URL and click **"build"**
 
-<img src="../../assets/images/lab_4_buildwparams.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_4_buildwparams.png" width="500"/>
 
 <hr>
 

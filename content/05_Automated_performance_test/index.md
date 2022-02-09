@@ -13,7 +13,7 @@ different angles via automated tests, but terminates immediately in case of fail
 passes all stages it is regarded to be of sufficient quality to be released into production.
 
 
-<img src="../../assets/images/keptn_logo.png"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/keptn_logo.png"/>
 
 - [keptn](https://keptn.sh/)
 
@@ -31,15 +31,15 @@ and a powerful API enabling full visibility of every deployment and operations t
 You can access the keptn bridge by opening the "Autonomous Cloud Concepts with Keptn" Dashboard in Dynatrace.
 Then simply select the "Keptn Bridge" link.
 
-<img src="../../assets/images/pre_keptn_bridge01.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/pre_keptn_bridge01.png" width="500"/>
 
 You can also access the bridge from the KIAB page.
 
-<img src="../../assets/images/pre_keptn_kiab.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/pre_keptn_kiab.png" width="500"/>
 
 Now let's take a quick tour of the keptn bridge. 
 
-<img src="../../assets/images/lab_5_bridge.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_5_bridge.png" width="500"/>
 
 ## What do we see?
 
@@ -48,14 +48,14 @@ Keptn allows to declaratively define multi-stage delivery workflows by defining 
 How to achieve this delivery workflow is then left to other components and also here Keptn provides 
 deployment services, which allow you to setup a multi-stage delivery workflow without a single line of pipeline code.
 
-<img src="../../assets/images/lab_5_pdw.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_5_pdw.png" width="500"/>
 
 ### Keptn Quality Gate Process
 Keptn quality gates provide you a declarative way to define quality criteria of your service. 
 Therefore, Keptn will collect, evaluate, and score those quality criteria to decide if a new 
 version is allowed to be promoted to the next stage or if it has to be held back.
 
-<img src="../../assets/images/lab_5_kqg.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_5_kqg.png" width="500"/>
 
 ### What is a Service-Level Indicator (SLI)?
 A service-level indicator is a “carefully defined quantitative measure of some aspect of the level of 
@@ -75,7 +75,7 @@ An example of an SLI is the response time (also named request latency), which is
  Lets have a quick look at two of these SLIs - one showing a regular built-in Dynatrace service metric the other one is a custom calculated 
  service metric that gives me response time for a particular test name:
  
-<details>
+
   <summary>SLI format:</summary>
 
 ```yaml
@@ -84,11 +84,10 @@ An example of an SLI is the response time (also named request latency), which is
  rt_test_homepage: "metricSelector=calc:service.teststepresponsetime:filter(eq(Test Step,homepage)):merge(0):avg?entitySelector=tag($SERVICE),type(SERVICE)"
 ```
 
-</details>
 
 Now let's examine the complete SLI setup.
 
-<details>
+
   <summary>SLI example</summary>
 
 ```yaml
@@ -107,7 +106,6 @@ indicators:
   cpu_time:     "metricSelector=builtin:service.cpu.time:merge(0):sum&entitySelector=tag($SERVICE),type(SERVICE)"
 ```  
 
-</details>
 
 <hr>
 
@@ -124,7 +122,7 @@ The SLI file we provided contains a good list of individual indicators. What we 
 the value through the SLI Provider a) Just give me the value b) Compare the value with a static threshold c) Compare 
 it with a baseline from previous runs, this is an example.  To see the full SLO, view this in the Keptn Bridge.
 
-<details>
+
   <summary>SLO example</summary>
 
 ```yaml
@@ -165,7 +163,6 @@ it with a baseline from previous runs, this is an example.  To see the full SLO,
               - "<=+50%"   
 ```
 
-</details>
 
 
 ### Continuous Performance Verification
@@ -175,7 +172,7 @@ these performance tests. The result can then be automatically processed or prese
 take further decisions. You can even expand this use case by letting Keptn deploying new versions of your 
 applications to a test environment, succeeded by triggering and evaluating the tests.
 
-<img src="../../assets/images/lab_5_ktap.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_5_ktap.png" width="500"/>
 
 <hr>
 
@@ -186,7 +183,7 @@ Let's discuss how we put these concepts into practice.
 - [Keptn Jenkins Shared Library](https://github.com/keptn-sandbox/keptn-jenkins-library)
 , Jenkins shared library for integrating Keptn Use Cases with your Jenkins Pipelines
 
-<img src="../../assets/images/lab_5_jsl.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_5_jsl.png" width="500"/>
 
 In order to use this Jenkins Shared Library simply configure it in your Global Jenkins Configuration.
 
@@ -201,7 +198,7 @@ The KEPTN_BRIDGE is the link to your keptn bridge so that the Library can genera
 
 Once you have everything configured use it in your Jenkins Pipeline like this
 
-<details>
+
   <summary>Jenkins pipeline example</summary>
 
 ```groovy
@@ -280,7 +277,6 @@ node {
 }
 ```
 
-</details>
 
 <hr>
 
@@ -302,7 +298,7 @@ Go to Keptn's Bridge and see how Keptn has deployed the service into staging and
 
 The bridge also gives you access to the links of the deployed service.
 
-<img src="../../assets/images/lab_5_keptnbridgeflow.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_5_keptnbridgeflow.png" width="500"/>
 
 <hr>
 
@@ -330,7 +326,7 @@ The Quality Gate evaluation should fail.
 
 We can see the evaluation failed the SLO evaluation.
 
-<img src="../../assets/images/carts_failure.png" width="400"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/carts_failure.png" width="400"/>
 
 The control plane prevents the bad deployment from being deployed to staging. 
 
@@ -338,17 +334,17 @@ Keptn quality gates provide you a declarative way to define quality criteria of 
 
 We can examine the effects by navigating back to the lab home page. then select the **Delivery pipeline overview** for the Sockshop app.
 
-<img src="../../assets/images/pipeline_overview.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/pipeline_overview.png" width="500"/>
 
 Here we will see the bad build deployed to Dev with 1000 MS response time.
 
-<img src="../../assets/images/bad_pipeline.png" width="400"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/bad_pipeline.png" width="400"/>
 
 Now, we can go into Dynatrace to find the root cause.
 
 There may be enough data for Dynatrace to present a problem card.
 
-<img src="../../assets/images/cart_problem.png" width="400"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/cart_problem.png" width="400"/>
 
 Drilling into the Response time problem, we can click on the "ItemsController"
 
@@ -356,11 +352,11 @@ The click the "addToCart" under "Requests contributing to this problem".
 
 Now we can clearly see the response time degridation introduced by the bad build.
 
-<img src="../../assets/images/cart_problem_detail.png" width="400"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/cart_problem_detail.png" width="400"/>
 
 The Dynatrace AI (@Davis) also understand the deployment and illustatrates the event integration with Dynatrace.
 
-<img src="../../assets/images/cart_problem_deployment.png" width="400"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/cart_problem_deployment.png" width="400"/>
 
 Now Let's trigger the build for cart version **0.12.3** as we have previously done for the **0.12.2** build.
 

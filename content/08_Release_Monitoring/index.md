@@ -28,11 +28,11 @@ We recommend that you propagate Kubernetes labels to environment variables in th
 
 In this example we are using a helmchart type of deployment.
 
-<img src="../../assets/images/kube_label.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/kube_label.png" width="500"/>
 
 Pulls value from the values.yaml
 
-<img src="../../assets/images/values_yaml.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/values_yaml.png" width="500"/>
 
 Now, we can examine this release information in Dynatrace. 
 
@@ -52,7 +52,7 @@ Expand the **"Properties and tags"**, then select the process group.
 
 We will just validate the process group tags are present.
 
-<img src="../../assets/images/process_tags.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/process_tags.png" width="500"/>
 
 Now, we can kickoff the **"07-release-for-version"** pipeline in jenkins.
 
@@ -63,7 +63,7 @@ This pipeline use the Events API to injest the release information. we do this o
 
 Here is a sample json payload, Note that the processes are matched via tags.  This specific example uses parameters and variables from Jenkins.
 
-<details>
+
   <summary>example json:</summary>
 
 ```json
@@ -105,7 +105,6 @@ Here is a sample json payload, Note that the processes are matched via tags.  Th
 					}
 ```
 
-</details>
 
 <hr>
 
@@ -115,15 +114,15 @@ Go to Dynatrace and select **"Releases"**
 
 Now, we can see the release version for our keptnorders.staging containers.
 
-<img src="../../assets/images/release_info.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/release_info.png" width="500"/>
 
 We also have the ability to examine the deployment events. 
 
-<img src="../../assets/images/release_events.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/release_events.png" width="500"/>
 
 Finally, we can click on the deployed component and examine details about the component and deployments all in one place.
 
-<img src="../../assets/images/release_details.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/release_details.png" width="500"/>
 
 We will skip the Issue-tracking integration at this time.  Just note, that you can integrate your issue-tracking system with Dynatrace.
 

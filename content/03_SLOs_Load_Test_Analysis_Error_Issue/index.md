@@ -2,7 +2,7 @@
 
 In this lab we walk through how to create SLOs in Dynatrace that can be used in your Performance Testing and we will also troubleshoot why a Availability/Error SLO failed.
 
-<img src="../../assets/images/lab_3_overview.png" width="800"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_3_overview.png" width="800"/>
 
 The Google’s SRE Handbook mostly focuses on the production use case for SLIs/SLOs, Dynatrace is “Shifting-Left” this approach and using SLIs/SLOs
 
@@ -24,7 +24,7 @@ Open Jenkins.
 
 Click on **01_deploy_order_application** pipeline
 
-<img src="../../assets/images/Lab_1_deploy_order_application_1.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/Lab_1_deploy_order_application_1.png" width="700"/>
 
 Now we are going to push the **order** version **2.0.0**.
 
@@ -32,11 +32,11 @@ Select **Build with parameters**
 
 In the **orderRelease** dropdown select **2.0.0**
 
-<img src="../../assets/images/lab_3_order_build.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_3_order_build.png" width="700"/>
 
 In the **DEPLOY_TO field**, change the dropdown box to **order**
 
-<img src="../../assets/images/lab_3_build_order.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_3_build_order.png" width="700"/>
 
 Next, click the **Build** button.
 
@@ -50,7 +50,7 @@ Click **SLOs** from the Main Navigation menu.
 
 Then Select the **Add new SLO** Button.
 
-<img src="../../assets/images/slo_1.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/slo_1.png" width="700"/>
 
 This will bring up the **Add new SLO** wizard screen.
 
@@ -58,7 +58,7 @@ Click on the **Service-level availability** button.
 
 In the **Name this service-level availability SLO** section use this name:  `Availability - Catalog_Staging`
 
-<img src="../../assets/images/slo_2.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/slo_2.png" width="700"/>
 
 Now we need to **Define a filter** by expanding the define a filter section. 
 
@@ -70,11 +70,11 @@ Copy and paste the below text into the **Entity selector** section:
 
 Then click the **Preview** button.
 
-<img src="../../assets/images/slo_4.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/slo_4.png" width="700"/>
 
 Now we need to select **Evaluate** - if the SLO was setup properly we should see data in the graph.
 
-<img src="../../assets/images/slo_5.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/slo_5.png" width="700"/>
 
 The final step in creating this SLO is to click on the **Create** button.
 
@@ -102,7 +102,7 @@ Now we will run one more load test to see the outcome for the SLO's
 
 Open Jenkins and click on **04-performancetest-qualitygate** pipeline:
 
-<img src="../../assets/images/lab_3_jenkins_run_load_test_1.png" width="800"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_3_jenkins_run_load_test_1.png" width="800"/>
 
 Select **Build with parameters**
 
@@ -110,7 +110,7 @@ We only need to validate the **DeployomentURI** section.
 
 When done click the **Build** button which will start the Performance Test.
 
-<img src="../../assets/images/lab_3_jenkins_run_load_test_2.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_3_jenkins_run_load_test_2.png" width="700"/>
 
 <hr>
 
@@ -125,18 +125,18 @@ We will need to edit the dashboard to use the SLO's we created in the previous s
 
 We should have these SLO's in our list.
 
-<img src="../../assets/images/slo_list.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/slo_list.png" width="700"/>
 
 Click **Edit**
 
 Select the SLO tile, then change the "select a SLO" from the drop down box. Select the appropriate SLO.
 You will do this for each SLO tile.
 
-<img src="../../assets/images/dashboard_slo_edit.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/dashboard_slo_edit.png" width="700"/>
 
 Now we can see if the SLO for the **Order** service is being met or not.  In the next section we will show you why!
 
-<img src="../../assets/images/lab_3_performance_test_dashboard_with_transaction_steps_slos_1.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_3_performance_test_dashboard_with_transaction_steps_slos_1.png" width="700"/>
 
 <hr>
 
@@ -150,21 +150,21 @@ If a Dynatrace Problem has generated a Problem during your Performance Test that
 
 From the Problem card we will focus on the Root cause Dynatrace has provided around the Failure rate increase.   Click on the **Analyze failure rate degradation** button. 
 
-<img src="../../assets/images/lab_3_load_test_problem_1.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_3_load_test_problem_1.png" width="700"/>
 
 This will bring us to the **Failure analysis** screen.  We can see HTTP 500 Errors were generated and by each transaction.  To dig deeper you can drill-down to the Purepaths by clicking on the **Purepaths** icon at the top right of the screen.
 
-<img src="../../assets/images/lab_3_load_test_problem_2.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_3_load_test_problem_2.png" width="700"/>
 
 This will bring us to the failed **Purepaths**.  Click on a **Purepath** to see the trace details Dynatrace has captured around the failure.
 
-<img src="../../assets/images/lab_3_load_test_problem_3.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_3_load_test_problem_3.png" width="700"/>
 
 This will bring us to the Purepath trace details screen. Click on the **second node which is the order service** in the trace tree.  Then click on **Errors** in the table.  Then click on the down arrow under the **Details** of the Exception.
 
 When looking at the Exception details we can see the in **Message** details the exact error message which caused the failure rate for the Performance test.   A good best practice is to copy the Dynatrace URL(s) for the screens you want to share in your analysis back to the Application team.
 
-<img src="../../assets/images/lab_3_load_test_problem_4.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_3_load_test_problem_4.png" width="700"/>
 
 If a Dynatrace Problem wasn't detected you can use out of the box workflows and custom dashboards.    We will walk through using the **Performance Test Dashboard with Transaction Steps & SLOs** but also out of the box options as well.
 
@@ -172,7 +172,7 @@ Open the **Performance Test Dashboard with Transaction Steps & SLOs** dashboard.
 
 Then click on the **Errors** link under **Transaction** on the left side of the dashboard.
 
-<img src="../../assets/images/lab_3_slo_dashboard_1.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_3_slo_dashboard_1.png" width="700"/>
 
 This will bring us to **Multidimensional analysis** that is showing failed request counts split by the **TSN** request attribute.   Note,  you can also create your own **Multidimensional analysis** views and save them by going to the Diagnostic tools-->Top web requests configure desired settings.
 
@@ -180,21 +180,21 @@ In the table provides the details for the failed Transaction Steps.  On the far 
 
 Click on **Details of failures**.
 
-<img src="../../assets/images/lab_3_slo_dashboard_2.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_3_slo_dashboard_2.png" width="700"/>
 
 This will bring us to the **Failure analysis** screen.  We can see HTTP 500 Errors were generated and also see exactly which transactions were impacted.  To dig deeper you can drill-down to the Purepaths by click on the **Purepaths** icon at the top right of the screen.
 
-<img src="../../assets/images/lab_3_load_test_problem_2.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_3_load_test_problem_2.png" width="700"/>
 
 This will bring us to the failed **Purepaths**.  Click on a **Purepath** to see the trace details Dynatrace has captured around the failure.
 
-<img src="../../assets/images/lab_3_load_test_problem_3.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_3_load_test_problem_3.png" width="700"/>
 
 This will bring us to the Purepath trace details screen.    Click on the **second node which is the order service** in the trace tree.   Then click on **Errors** in the table.   Then click on the down arrow under the **Details** of the Exception.
 
 When looking at the Exception details we can see the in **Message** details that has the exact error message which caused the failure rate for the Performance test.   A good best practice is to copy the Dynatrace URL(s) of the screens you want to share with your analysis back to the Application team.
 
-<img src="../../assets/images/lab_3_load_test_problem_4.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_3_load_test_problem_4.png" width="700"/>
 
 Last, we will cover troubleshooting via an out of the box workflow for a key service that has been impacted during the Performance Test.  
 
@@ -202,19 +202,19 @@ Click "**Transactions and services**" from the Main Navigation menu.
 
 Then click on the **Order** service in the **Services** screen.
 
-<img src="../../assets/images/lab_3_analysis_oob_1.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_3_analysis_oob_1.png" width="700"/>
 
 This will bring up the **Order** Service overview screen.   Under Dynamic web requests section (charts) click the **Failure rate** section.
 
-<img src="../../assets/images/lab_3_analysis_oob_2.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_3_analysis_oob_2.png" width="700"/>
 
 This will bring up the **Order** Service **Failure rate** screen.   Click the **View details of failures** button.
 
-<img src="../../assets/images/lab_3_analysis_oob_3.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_3_analysis_oob_3.png" width="700"/>
 
 This will bring us to the **Failure analysis** screen.   We can see all the failures, which transactions were impacted and Reason for failed requests including the Stack Trace Exception message.  To dig deeper you can drill-down to the Purepaths by click on the **Purepaths** icon at the top right of the screen.
 
-<img src="../../assets/images/lab_3_analysis_oob_4.png" width="700"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_3_analysis_oob_4.png" width="700"/>
 
 <hr>
 

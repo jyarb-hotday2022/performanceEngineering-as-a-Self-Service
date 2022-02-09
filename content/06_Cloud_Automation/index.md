@@ -2,7 +2,7 @@
 
 ## Dynatrace Cloud Automation currently offers
 
-<details><summary>Service-Level Objectives (SLO)</summary>
+<summary>Service-Level Objectives (SLO)</summary>
 <p>
 Service-level objectives (SLOs) enable DevOps teams to accelerate and scale their site reliability engineering (SRE) efforts.
 
@@ -11,8 +11,8 @@ Dynatrace comes with native support for service-level objective (SLO) monitoring
 ### SLO overview
 You can review the current health status, error budgets, target and warning, along with the timeframe of all your SLOs on the SLOs overview page.
 </p>
-</details>
-<details><summary>Automated release Inventory and version comparison</summary>
+
+<summary>Automated release Inventory and version comparison</summary>
 <p>
 Automated release inventory and version comparison enable an easy evaluation of the performance of individual release versions.
 
@@ -28,8 +28,8 @@ Dynatrace offers a built-in release-analysis solution that helps you determine t
 - How the new version is behaving compared to previous versions
 - Issue statistics related to the monitored entities
 </p>
-</details>
-<details><summary>Automated validation with quality gates</summary>
+
+<summary>Automated validation with quality gates</summary>
 <p>
 Automated release validation and quality gates ensure that high-quality code moves smoothly through the delivery pipeline and doesn't violate error budgets in production.
 
@@ -38,27 +38,27 @@ Quality gates are benchmarks in the software delivery lifecycle that define spec
 
 Establishing clear, consistent, and effective quality gates that are automatically validated at each phase of the delivery pipeline is essential for improving software quality and speeding up delivery.
 </p>
-</details>
-<details><summary>Lifecycle orchestration</summary>
+
+<summary>Lifecycle orchestration</summary>
 <p>
 Lifecycle orchestration provides a declarative way to define your delivery or operational processes with event-based triggers for integration.
 
 Dynatrace Cloud Automation can orchestrate different delivery or operational processes that are part of an application's lifecycle. Cloud Automation also provides an easy, event-based integration point for external tools (such as testing services, notification services, and incident management services) via webhooks. With external tool integration, you can set external tools to send events to Dynatrace, or set Dynatrace Cloud Automation to send events to external tools, which can then execute certain tasks in response.
 </p>
-</details>
+
 <br />
 <br />
 We have already discussed Service Level Objective (SLO's).
 
 Now we will delve into Cloud Automation Quality Gates.
 
-<img src="../../assets/images/CA_Use_Cases.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/CA_Use_Cases.png" width="500"/>
 <br />
 <br />
 
 ### SRE Best practices
 
-<img src="../../assets/images/SRE_best_Practice.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/SRE_best_Practice.png" width="500"/>
 <br />
 <br />
 
@@ -79,15 +79,15 @@ Now we will delve into Cloud Automation Quality Gates.
 
 ### Our mission is to help everyone with their cloud automation journey
 
-<img src="../../assets/images/automation_journey.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/automation_journey.png" width="500"/>
 
 ### Quality Gate (simple example)
 
-<img src="../../assets/images/QG_Example.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/QG_Example.png" width="500"/>
 
 ### Quality Gate Jenkins Example
 
-<img src="../../assets/images/QG_Jenkins_Example.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/QG_Jenkins_Example.png" width="500"/>
 <br />
 
 <hr>
@@ -114,7 +114,7 @@ These are the tags we will need to create:
 - keptn_project: dynatrace
 - keptn_stage: quality_gate
 
-<img src="../../assets/images/service_tags.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/service_tags.png" width="500"/>
 
 If you use Keptn for the deployment of your artifacts using Keptn's Helm Service you will have these four tags automatically set and detected by Dynatrace. If you want to use other tags, you need to overwrite the SLI configuration (see below).
 
@@ -123,7 +123,7 @@ If you use Keptn for the deployment of your artifacts using Keptn's Helm Service
 First, let's check in the Keptn brige.
 If we select the "dynatrace" project, we should see your services.
 
-<img src="../../assets/images/dynatrace_services.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/dynatrace_services.png" width="500"/>
 
 ### Next, We will utilize the Keptn "Web Service" for the lab.
 
@@ -132,13 +132,13 @@ This will open the following page that will allow us to trigger evaluations.
 
 ### Now we just need to change the values to match your tags.
 
-<img src="../../assets/images/keptn_web_service.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/keptn_web_service.png" width="500"/>
 
 ### Then click "trigger evaluation"
 
 If we did everything correclty, we should see the evaluation performed for the quality-gate.
 
-<img src="../../assets/images/service_qg.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/service_qg.png" width="500"/>
 
 Now that we understand how to tag service for evaluations, continue by tagging additional services for evaluation.
 

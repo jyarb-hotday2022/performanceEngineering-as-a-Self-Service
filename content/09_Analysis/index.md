@@ -15,15 +15,15 @@ Within Dynatrace, you can use request naming rules to adjust how your requests a
 
 For the **order** service, we want to change the discovered transaction names to use the **LSN** request attribute that has the Test Step Name you use in your load test product when running Performance Tests.
 
-<img src="../../assets/images/lab_6_request_web_request_naming_rule_1.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_6_request_web_request_naming_rule_1.png" width="500"/>
 
 At the top of the **order** services page and choosing the edit option as shown below.
 
-<img src="../../assets/images/lab_6_request_web_request_naming_rule_2.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_6_request_web_request_naming_rule_2.png" width="500"/>
 
 Within in the service settings, navigate to Web request naming and click the **Add rule** button
 
-<img src="../../assets/images/lab_6_request_web_request_naming_rule_3.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_6_request_web_request_naming_rule_3.png" width="500"/>
 
 Below are the settings we want to use:
 
@@ -43,7 +43,7 @@ We are going to cover how to create a Customer alert based on response time for 
 
 Go to **"Settings>Anomaly detection>Custom events for alerting"** and then select **Create custom event for alerting**.
 
-<img src="../../assets/images/lab_6_custom_alert_1.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_6_custom_alert_1.png" width="500"/>
 
 The will bring you to the **Create custom event for alerting** screen.
 
@@ -63,7 +63,7 @@ We will use the following settings:
 
 When finished, select the **Create rule based filer**
 
-<img src="../../assets/images/lab_6_custom_alert_2.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_6_custom_alert_2.png" width="500"/>
 
 In the **Monitoring strategy** section we will use the following settings:
 
@@ -80,7 +80,7 @@ In the **Event description** section we will use the following settings:
 
 When finished, select the **Create custom event for alerting** button.   This will create your custom alert.
 
-<img src="../../assets/images/lab_6_custom_alert_3.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_6_custom_alert_3.png" width="500"/>
 
 We need to run a Load Test so we can review the Problem that gets generated from the custom alert you setup.
 
@@ -92,15 +92,15 @@ Click "**Transactions and services**" from the Main Navigation menu.
 
 Then click on the **Order** service in the **Services** screen.
 
-<img src="../../assets/images/lab_6_oob_nplus1_1.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_6_oob_nplus1_1.png" width="500"/>
 
 This will bring up the **Order** Service overview screen.   Under Dynamic web requests section (charts) click the **Response time** section.
 
-<img src="../../assets/images/lab_6_oob_nplus1_2.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_6_oob_nplus1_2.png" width="500"/>
 
 This will bring up the **Order** Service **Response time** screen.   Click the **View details response time hotspots** button.
 
-<img src="../../assets/images/lab_6_oob_nplus1_3.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_6_oob_nplus1_3.png" width="500"/>
 
 This will bring us to the **Response time analysis** screen.   We can see Average response time,  Distributions and Top findings.
 
@@ -108,17 +108,17 @@ In the *Distributions* section click the **Interactions witt services and queues
 
 To dig deeper you can drill-down to the Purepaths by click on the **Purepaths** button at the bottom of the screen under the **Analyze 'order' requests** section*.
 
-<img src="../../assets/images/lab_6_oob_nplus1_4.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_6_oob_nplus1_4.png" width="500"/>
 
 This will bring us to the slow **Purepaths**.  Click on a **Purepath** to see the trace details Dynatrace has captured around the slow transaction.
 
-<img src="../../assets/images/lab_6_oob_nplus1_5.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_6_oob_nplus1_5.png" width="500"/>
 
 This will bring us to the Purepath trace details screen. Reviewing the puepath details we quickly see an high number of queries are being executed by the **customer** service over and over.   
 
 This is a **N+1** issue!!  This is inefficient at that transaction level but can also kill your database and impact other transactions.
 
-<img src="../../assets/images/lab_6_oob_nplus1_6.png" width="500"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_6_oob_nplus1_6.png" width="500"/>
 
 ### Compare Results of Two Test Runs
 
@@ -128,7 +128,7 @@ In this example a new deploy for version 2.0.0 of a node.js sample application t
 
 Focusing on “Average Failure Rate split by Test Names” and comparison with the previous test.
 
-<img src="../../assets/images/lab_6_comparison_example.png" width="800"/>
+<img src="https://jyarb-hotday2022.github.io/performanceEngineering-as-a-Self-Service/assets/images/lab_6_comparison_example.png" width="800"/>
 
 ## Summary
 
