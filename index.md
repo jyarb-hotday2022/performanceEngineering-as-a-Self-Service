@@ -17,3 +17,5 @@ You can find more information about running your own instance of KIAB by looking
 - [SLI/SLO Dashboards](content/07_SLI_SLO_Dashboards/index.md)
 - [Release Monitoring](content/08_Release_Monitoring/index.md)
 - [Analysis](content/09_Analysis/index.md)
+
+<button class="button-save large">[Get Started](content/01_Prep/index.md)</button>
