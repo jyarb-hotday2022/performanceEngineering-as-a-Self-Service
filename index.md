@@ -52,13 +52,13 @@ Then run the following from the command prompt.
 
 Get the URL for lab from the log output.
 
-<img src="https://github.com/jyarb-hotday2022/performanceEngineering-as-a-Self-Service/blob/gh-pages/assets/images/KIAB_info.png" width="500"/>
+<img src="assets/images/KIAB_info.png" width="500"/>
   
 </details>
 
 Welcome to KIAB.
 
-<img src="https://github.com/jyarb-hotday2022/performanceEngineering-as-a-Self-Service/blob/gh-pages/assets/images/KIAB.png" width="500"/>
+<img src="assets/images/KIAB.png" width="500"/>
 
 <hr>
 
@@ -67,7 +67,7 @@ Welcome to KIAB.
 Click on the "Bridge" link. This will open the keptn bridge.
 You should see the preloaded projects.
 
-<img src="https://github.com/jyarb-hotday2022/performanceEngineering-as-a-Self-Service/blob/gh-pages/assets/images/bridge01.png" width="500"/>
+<img src="assets/images/bridge01.png" width="500"/>
 
 By examining the Bridge, we can determine if we need to trigger a deployment for any of the
 application services.
@@ -81,7 +81,7 @@ You may need to run several pipelines to complete the deployments of the applica
 ### Check the Host is tagged. 
 You should see these tags,
 
-<img src="https://github.com/jyarb-hotday2022/performanceEngineering-as-a-Self-Service/blob/gh-pages/assets/images/hosttags.png" width="500"/>
+<img src="assets/images/hosttags.png" width="500"/>
 
 <details><summary>If you do not see these tags follow these steps</summary>
 
@@ -107,7 +107,7 @@ Navigate to **"Settings>Server-side service monitoring>Calculated service metric
 
 You should see 4 calculated service Metrics:
 
-<img src="https://github.com/jyarb-hotday2022/performanceEngineering-as-a-Self-Service/blob/gh-pages/assets/images/lab_1_calculated_service_metrics.png" width="500"/>
+<img src="assets/images/lab_1_calculated_service_metrics.png" width="500"/>
 
 <details><summary>If you do not see these tags perform these steps</summary>
 
@@ -141,7 +141,7 @@ Use these settings to create the Rule.
 - Conditions: Host tags equals [Environment]kiab
 - Select checkbox "Apply to processes running on matching hosts
 
-   <img src="https://github.com/jyarb-hotday2022/performanceEngineering-as-a-Self-Service/blob/gh-pages/assets/images/ss_mz.png" width="500"/>
+   <img src="assets/images/ss_mz.png" width="500"/>
 
 - Click **"Preview"**
 - Click **"Create rule"**
@@ -171,17 +171,17 @@ Login to Jenkins with the following credentials
 * username = keptn
 * password = keptn
 
-<img src="https://github.com/jyarb-hotday2022/performanceEngineering-as-a-Self-Service/blob/gh-pages/assets/images/Lab_1_Jenkins_Log_In.png" width="400"/>
+<img src="assets/images/Lab_1_Jenkins_Log_In.png" width="400"/>
 
 First you will just select "Install Suggested Plugins"
 
-<img src="https://github.com/jyarb-hotday2022/performanceEngineering-as-a-Self-Service/blob/gh-pages/assets/images/jenkins-install-plugins.png" width="500"/>
+<img src="assets/images/jenkins-install-plugins.png" width="500"/>
 
 Now we will kick off the Pipeline **01-deploy-order-application** to build out the application.
 
 After selecting the pipeline click **"build"**
 
-<img src="https://github.com/jyarb-hotday2022/performanceEngineering-as-a-Self-Service/blob/gh-pages/assets/images/Lab_1_deploy_order_application_1.png" width="500"/>
+<img src="assets/images/Lab_1_deploy_order_application_1.png" width="500"/>
 
 The initial build will fail, this is normal, becasue the pipeline files are pulled from a github repo.
 
@@ -190,7 +190,7 @@ Refresh the page, you should then see "Build with parameters".
 Initially, the "order" service may fail, in the "DEPLOY_TO" option, we can select order.
 This allows us to deploy only the "order" service.
 
-<img src="https://github.com/jyarb-hotday2022/performanceEngineering-as-a-Self-Service/blob/gh-pages/assets/images/buildwithparams.png" width="500"/>
+<img src="assets/images/buildwithparams.png" width="500"/>
 
 We now have different options for each pipeline build.
 Instead of documenting each part here, we will walk through a few scenerios.
@@ -211,11 +211,11 @@ pipeline and build out the necessary services.
 
 This application was built for demonstations of Dynatrace.  Here is the frontend.
 
-<img src="https://github.com/jyarb-hotday2022/performanceEngineering-as-a-Self-Service/blob/gh-pages/assets/images/orders.png" width="400"/>
+<img src="assets/images/orders.png" width="400"/>
 
 The overall application is made up of four Docker components: a frontend web UI and 3 backend services.  Once monitored by Dynatrace, a multi-tier service flow will be available as shown below.
 
-<img src="https://github.com/jyarb-hotday2022/performanceEngineering-as-a-Self-Service/blob/gh-pages/assets/images/dt-call-flow.png" width="500"/>
+<img src="assets/images/dt-call-flow.png" width="500"/>
 
 #### Pre-built Docker Images
 
@@ -246,17 +246,17 @@ This is a summary of the versions followed by a description of the problem scena
 
 #### Deploy dtdemos/customer-service:2.0.0
 
-<img src="https://github.com/jyarb-hotday2022/performanceEngineering-as-a-Self-Service/blob/gh-pages/assets/images/usecase1.png" width="500"/>
+<img src="assets/images/usecase1.png" width="500"/>
 
 ### Deploy dtdemos/order-service:2.0.0 
 
 Both these scenearios are enabled
 
-<img src="https://github.com/jyarb-hotday2022/performanceEngineering-as-a-Self-Service/blob/gh-pages/assets/images/usecase2.png" width="500"/>
+<img src="assets/images/usecase2.png" width="500"/>
 
 and...
 
-<img src="https://github.com/jyarb-hotday2022/performanceEngineering-as-a-Self-Service/blob/gh-pages/assets/images/usecase3.png" width="500"/>
+<img src="assets/images/usecase3.png" width="500"/>
 
 </details>
 
@@ -270,17 +270,17 @@ Open Dynatrace and navigate to **Hosts** in the menu and select the host.
 
 ### Let's examine all the proceses automatically discovered by the Dynatrace oneAgent.
 
-<img src="https://github.com/jyarb-hotday2022/performanceEngineering-as-a-Self-Service/blob/gh-pages/assets/images/pre_host.png" width="400"/>
+<img src="assets/images/pre_host.png" width="400"/>
 
 We can also see the processes for the order application.
 
-<img src="https://github.com/jyarb-hotday2022/performanceEngineering-as-a-Self-Service/blob/gh-pages/assets/images/pre_processes.png" width="500"/>
+<img src="assets/images/pre_processes.png" width="500"/>
 
 Next we can examine the Transactions and Services.
 
 Select **Transactions and Services** from the menu.
 
-<img src="https://github.com/jyarb-hotday2022/performanceEngineering-as-a-Self-Service/blob/gh-pages/assets/images/pre_services.png" width="500"/>
+<img src="assets/images/pre_services.png" width="500"/>
 
 You can also change the focus by using the _management zone_ filter.
 
@@ -288,7 +288,7 @@ Finally, we can also see how the KIAB configured Kubernetes cluster monitoring.
 
 Select **Kubernetes** from the menu.
 
-<img src="https://github.com/jyarb-hotday2022/performanceEngineering-as-a-Self-Service/blob/gh-pages/assets/images/pre_kube.png" width="500"/>
+<img src="assets/images/pre_kube.png" width="500"/>
 
 ### Pre-configured items also include:
 
@@ -307,4 +307,4 @@ Due to to time constrainsts, we will visit each area as needed during the lab ex
 
 Validate each project stage has been properly deployed by navigating to the KIAB homepage then selecting each application overview link (except EasyTravel which will not be part of this lab).
 
-<img src="https://github.com/jyarb-hotday2022/performanceEngineering-as-a-Self-Service/blob/gh-pages/assets/images/applinks.png" width="400"/>
+<img src="assets/images/applinks.png" width="400"/>
