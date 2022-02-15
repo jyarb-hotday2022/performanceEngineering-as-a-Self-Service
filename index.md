@@ -16,7 +16,7 @@ This lab requires that you install and run Keptn-in-a-box (kiab) on Ubuntu
 
 You can find more information about installing and running your own instance of KIAB by going to the KIAB Repo.
 
-### [KIAB Repo page](https://github.com/jyarb-keptn/keptn-in-a-box/tree/0.8.10) 
+### [KIAB Repo page](https://jyarb-keptn.github.io/keptn-in-a-box/) 
 
 ### Lab guide
 
