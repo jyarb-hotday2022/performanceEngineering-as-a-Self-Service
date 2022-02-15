@@ -2,6 +2,10 @@
 
 ## Welcome to Dynatrace Performance as a Self Service Lab
 
+## Requirements
+- Dynatrace tenant
+- Ubuntu on AWS
+
 This lab requires that you install and run Keptn-in-a-box (kiab)
 
 You can find more information about running your own instance of KIAB by looking at the KIAB Repo.
