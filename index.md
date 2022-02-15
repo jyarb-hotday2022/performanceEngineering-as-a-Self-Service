@@ -1,3 +1,7 @@
+> **DISCLAIMER**: This project was developed for educational purposes only and is not complete, 
+nor supported. It's publishment is only intended for helping others automate lab environments for delivering 
+workshops and labs with Keptn & Dynatrace. This lab is intended for intermediate users of Dynatrace and not intended for beginners.
+
 # Dynatrace Labs
 
 ## Welcome to Dynatrace Performance as a Self Service Lab
