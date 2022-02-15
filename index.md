@@ -3,14 +3,16 @@
 ## Welcome to Dynatrace Performance as a Self Service Lab
 
 ## Requirements
-- Dynatrace tenant
+- Dynatrace SaaS tenant
+  - Dynatrace API Token
+  - Dynatrace PAAS token
 - Ubuntu on AWS
 
-This lab requires that you install and run Keptn-in-a-box (kiab)
+This lab requires that you install and run Keptn-in-a-box (kiab) on Ubuntu
 
 You can find more information about running your own instance of KIAB by looking at the KIAB Repo.
 
-[KIAB Repo](https://github.com/jyarb-keptn/keptn-in-a-box/tree/0.8.10) - requires you run this on AWS.
+[KIAB Repo](https://github.com/jyarb-keptn/keptn-in-a-box/tree/0.8.10) 
 
 - [Introduction](content/01_Prep/index.md)
 - [Load Test Analysis](content/02_Load_Test_Analysis_Performance_Issue/index.md)
